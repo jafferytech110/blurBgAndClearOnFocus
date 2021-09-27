@@ -47,3 +47,18 @@ body {
   border: 3px solid #fff;
   pointer-events: none;
 }
+
+.mouse_hover_area::before {
+  content: "Blurry Background";
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  width: 400px;
+  height: 200px;
+  color: #fff;
+  z-index: 999;
+  font-size: 6rem;
+  font-weight: bolder;
+  filter: blur(0);
+  text-align: center;
+}
