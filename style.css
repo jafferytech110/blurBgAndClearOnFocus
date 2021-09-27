@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+  font-size: 16px;
+  margin: 0;
+  background: #fff;
+}
+
+.mouse_area_wrap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.mouse_hover_area {
+  width: 100%;
+  height: 100vh;
+  background: url(/images/QA.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  filter: blur(5px);
+}
+
+.mouse {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: url("/images/QA.jpeg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  border: 3px solid #fff;
+  pointer-events: none;
+}
